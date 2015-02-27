@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html  lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title> Hello World </title>
+</head>
+<body>
+    <div ng-controller="HelloWorldCtrl" >
+        <h1> {{helloMessage}} </h1>
+         <label for="name"> Enter Your Name: </label>
+        <input id="name" type="text" ng-model="inputText" />
+         Hello {{inputText}}
+        <button ng-click="clicked(inputText)"> Greet Yourself </button>
+    </div>
+    <script src="libs/angular.min.js" > </script>
+    <script type="text/javascript">
+        function HelloWorldCtrl($scope) {
+            $scope.helloMessage = 'Hello From Angular';
+            $scope.clicked = function (name) {
+                console.log(name);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Angular Template </title>
+    <link rel="stylesheet" href="content/app.css">
+</head>
+<body ng-app="myApp" ng-cloak>
+
+<div ng-controller="HomeController">
+    <a href="/#/home" >Go Home</a>
+    <a href="/#/info" >Get More Info</a>
+    <a href="/#/details"> Details </a>
+    <a href="/#/other"> Not Implementer Route </a>
+</div>
+
+<div my-directive></div>
+<div ng-include="'app/views/partials/details.html'"></div>
+<div ng-view>
+
+</div>
+<footer ng-controller="FooterController"> {{footer}} </footer>
+
+<script src="node_modules/angular/angular.js" ></script>
+<script src="node_modules/angular-route/angular-route.js" ></script>
+<script src="app/app.js" ></script>
+<script src="app/controllers/HomeCtrl.js" ></script>
+<script src="app/controllers/FooterCtrl.js"></script>
+<script src="app/controllers/DetailsCtrl.js"></script>
+<script src="app/filters/statusFilter.js" ></script>
+<script src="app/services/dataService.js" ></script>
+<script src="app/directives/myDirective.js" ></script>
+</body>
+</html>

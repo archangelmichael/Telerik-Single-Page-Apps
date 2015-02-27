@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Angular Template </title>
+    <link rel="stylesheet" href="content/app.css">
+</head>
+<body ng-app="myApp" ng-cloak>
+
+<div ng-controller="HomeController">
+    {{hello}}  1 + 2 = {{1 + 2}}
+
+    <div ng-if="isWorkDay">
+        <div ng-bind="hello"> </div>
+        <div ng-hide="workdayNoteHidden" ng-style="workdaysNoteStyle"> Today is a work day! </div>
+        <button ng-click="hideWorkdayNote()"> Hide Note </button>
+
+        <ul >
+            <li ng-repeat="number in numbers | limitTo: 3"> {{number}}</li>
+            <li ng-repeat="student in students"> {{student.name}} => {{student.mark}}</li>
+        </ul>
+
+
+    </div>
+
+    <div>
+        <label for="filter"> Filter by: </label>
+        <input id="filter" type="text" ng-model="filterInput" />
+        <h2> {{filterInput | status }}</h2>
+    </div>
+
+    <div> {{people}}</div>
+
+    <label for="pictureUrlInput" > Place picture Url to preview </label>
+    <input id="pictureUrlInput" type="text" ng-model="pictureUrl" />
+    <img style="width: 10%" src="http://upload.wikimedia.org/wikipedia/en/e/e0/USAF_F-16A_F-15C_F-15E_Desert_Storm_pic_2.jpg" ng-src="{{pictureUrl}}">
+</div>
+
+<footer ng-controller="FooterController"> {{footer}} </footer>
+
+<script src="node_modules/angular/angular.js" ></script>
+<script src="node_modules/angular-route/angular-route.js" ></script>
+<script src="app/app.js" ></script>
+<script src="app/controllers/HomeCtrl.js" ></script>
+<script src="app/controllers/FooterCtrl.js"></script>
+<script src="app/filters/statusFilter.js" ></script>
+<script src="app/services/dataService.js" ></script>
+</body>
+</html>
