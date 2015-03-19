@@ -1,0 +1,73 @@
+.logo-container {
+    width: 50%;
+    height: 50%;
+}
+
+.preview-container {
+    width: 100%;
+    height: 100%;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.info-style {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.info-style-border {
+    border-color: #46b8da;
+}
+
+.even-text-class {
+    color: #fff;
+    background-color: #5bc0de;
+}
+
+.odd-text-class {
+    color: #5bc0de;
+    background-color: #fff;
+}
+
+.round-blue-border {
+    border-radius: 15px;
+    background-color: #5bc0de
+}
+
+.preview-frame {
+    margin: 3px;
+}
+
+.info-hover-style li a {
+    margin: 3px;
+    border-radius: 15px;
+    border: 2px solid #5bc0de;
+}
+
+.info-hover-style li a:hover {
+    background-color: greenyellow;
+}
+
+.info-button-style {
+    display: block;
+}
+
+.info-button-style:active {
+    color: #000000;
+    background-color: greenyellow;
+}
+
+.like-button-style:active {
+    color: #000000;
+    background-color: greenyellow;
+}
+
+
+

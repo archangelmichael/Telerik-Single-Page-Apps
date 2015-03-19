@@ -1,6 +1,6 @@
 'use strict';
 
-motorsApp.controller('BrandDetailsController', function ($scope) {
+motorsApp.controller('BrandsShowroomController', function ($scope) {
     $scope.areDetailsShown = false;
     $scope.moreInfoButtonText = 'Show';
     $scope.brands = manufacturers;
@@ -9,7 +9,7 @@ motorsApp.controller('BrandDetailsController', function ($scope) {
     $scope.oddTextClass = "odd-text-class";
 
     $scope.showBrandDetails = function showBrandDetails() {
-        if($scope.areDetailsShown) {
+        if ($scope.areDetailsShown) {
             $scope.moreInfoButtonText = 'Show';
         }
         else {
@@ -19,7 +19,8 @@ motorsApp.controller('BrandDetailsController', function ($scope) {
         $scope.areDetailsShown = !$scope.areDetailsShown;
     };
 });
+
 /**
- * Created by Radi on 2/27/2015.
+ * Created by Radi on 3/12/2015.
  */
  

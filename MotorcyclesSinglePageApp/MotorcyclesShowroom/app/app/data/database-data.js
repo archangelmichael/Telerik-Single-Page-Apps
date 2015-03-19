@@ -10,7 +10,53 @@ var manufacturers = [
         additionalInformation: {
             location: 'Hamamatsu, Shizuoka Prefecture, Japan',
             website: 'http://www.yamaha-motor.com'
-        }
+        },
+        models: [{
+            id: 1,
+            abbreviation : "YZF-R1 2015",
+            avatar: 'img/yamaha/yamaha-yzf-r1-2015.jpg',
+            likes: 0
+        },{
+            id: 2,
+            abbreviation : "YZF-R6 2015",
+            avatar: 'img/yamaha/yamaha-yzf-r6-2015.jpg',
+            likes: 0
+        },{
+            id: 3,
+            abbreviation : "FZ1 2015",
+            avatar: 'img/yamaha/yamaha-fz1-2015.jpg',
+            likes: 0
+        },{
+            id: 4,
+            abbreviation : "FZ6R 2015",
+            avatar: 'img/yamaha/yamaha-fz6r-2015.jpg',
+            likes: 0
+        },{
+            id: 5,
+            abbreviation : "BOLT 2015",
+            avatar: 'img/yamaha/yamaha-yzf-r1-2015.jpg',
+            likes: 0
+        },{
+            id: 6,
+            abbreviation : "FZ-07 2015",
+            avatar: 'img/yamaha/yamaha-fz-07-2015.jpg',
+            likes: 0
+        },{
+            id: 7,
+            abbreviation : "FZ-09 2015",
+            avatar: 'img/yamaha/yamaha-fz-09-2015.jpg',
+            likes: 0
+        },{
+            id: 8,
+            abbreviation : "RIDER 2015",
+            avatar: 'img/yamaha/yamaha-raider-2015.jpg',
+            likes: 0
+        },{
+            id: 9,
+            abbreviation : "ROAD START SILVERADO S4 2015",
+            avatar: 'img/yamaha/yamaha-road-star-silverado-s4-2015.jpg',
+            likes: 0
+        }]
     },
     {
         id : 2,
@@ -68,26 +114,6 @@ var manufacturers = [
         }
     }
 ];
-
-var yamaha = [{
-
-    models : [{
-        id: 'FRZ1000R',
-        name: 'Thunderace',
-        produced: '1996-2003',
-        weight: '198kg',
-        power: '145bhp',
-        picture: 'img/fzr1000r.jpg'
-    },
-        {
-            id: 'FRZ1000R',
-            name: 'Thunderace',
-            produced: '1996-2003',
-            weight: '198kg',
-            power: '145bhp',
-            picture: 'img/fzr1000r.jpg'
-        }]
-}];
 /**
  * Created by Radi on 3/4/2015.
  */

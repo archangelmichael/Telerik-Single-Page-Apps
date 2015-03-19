@@ -35,20 +35,20 @@
     </div>
 </div>
 
-<div class="container" ng-controller="BrandDetailsController" ng-cloak>
+<div class="container" ng-controller="BrandsShowroomController" ng-cloak>
     <div class="jumbotron info-style" ng-repeat="brand in brands">
         <div class="row" >
-            <div class="col-md-5">
-                <img class="brand-logo-container" src="{{brand.logo}}" />
+            <div class="col-md-5 align-right">
+                <img class="preview-container" src="{{brand.logo}}" />
             </div>
-            <div class="col-md-6" >
+            <div class="col-md-6 align-left" >
                 <h2 ng-bind="brand.name | uppercase"> </h2>
                 <div>
                     <strong> Founded: </strong> {{brand.founded}}
                 </div>
                 <div>
                     <strong> More Information: </strong>
-                    <button ng-click="showBrandDetails()" class="btn btn-info info-hover-style" ng-bind="moreInfoButtonText"></button>
+                    <button ng-click="showBrandDetails()" class="btn btn-info info-button-style" ng-bind="moreInfoButtonText"></button>
                     <div ng-show="areDetailsShown">
                         <div>
                             <strong> Founders: </strong>
@@ -73,9 +73,6 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    {{ randomDate }}
-                </div>
             </div>
         </div>
     </div>
@@ -90,6 +87,7 @@
 </footer>
 <script src="app/data/database-data.js" ></script>
 <script src="node_modules/jquery/jquery-2.1.3.min.js" ></script>
+<script src="node_modules/underscore/underscore.js" ></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
 <script src="node_modules/angular/angular.js" ></script>
 <script src="node_modules/angular-route/angular-route.js" ></script>
@@ -97,6 +95,6 @@
 <script src="app/controllers/PageCtrl.js" ></script>
 <script src="app/controllers/HomeCtrl.js" ></script>
 <script src="app/controllers/FooterCtrl.js"></script>
-<script src="app/controllers/BrandDetailsCtrl.js"></script>
+<script src="app/controllers/BrandsShowroomCtrl.js"></script>
 </body>
 </html>
